@@ -1,5 +1,17 @@
 #!/bin/bash
-
+###################################################
+# Author : Maruti Nandan
+# Date : 18-Oct-2023
+#
+# Version : v1
+#
+# This Script will show the name of users who are having rites to access our  github repo
+# below the command which need to run after git clone
+# export username="mniet2009"
+# export token="XXXXXX"
+# ./list-users.sh shell-scripting-projects mniet2009
+###################################################
+helper()
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -35,7 +47,12 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
-
+function helper {
+ expected_cmd_args=2
+ if [ $# -ne $expected_cmd_args]; then
+ echo "Please execute the script with required command line args"
+ echo "asd"
+ }
 # Main script
 
 echo "Listing users with read access to ${REPO_OWNER}/${REPO_NAME}..."
