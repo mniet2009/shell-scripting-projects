@@ -1,6 +1,6 @@
 # AWS S3 Event Triggering
 
-You can also watch the entire implementation using the below mentioned YouTube video
+You can also watch the entire implementation using the below mentioned YouTube video.
 
 https://youtu.be/qLZ-s7wvK7w
 
